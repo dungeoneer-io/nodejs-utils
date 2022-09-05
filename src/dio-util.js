@@ -34,7 +34,7 @@ const lambdaTry200Catch500 = async ({
         await fn200(event);
 
         if (context && notifyOn200) {
-            await sendDiscordNotification(`:green_circle: **lmda-mythic-enum-scanner** successful lambda run\n${lambdaInfo}`);
+            await sendDiscordNotification(`:green_circle: successful lambda run\n${lambdaInfo}`);
         }
         return {
             statusCode: 200,
@@ -43,7 +43,7 @@ const lambdaTry200Catch500 = async ({
     } catch (e) {
         fn500(e, event);
         if (context && notifyOn500) {
-            await sendDiscordNotification(`:red_circle: **lmda-mythic-enum-scanner** responding 500\n\`\`\`\n${e.message}\n\`\`\`\n${lambdaInfo}`);
+            await sendDiscordNotification(`:red_circle: failed lambda run, responding 500\n\`\`\`\n${e.message}\n\`\`\`\n${lambdaInfo}`);
         }
         return {
             statusCode: 500,
