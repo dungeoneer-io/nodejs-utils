@@ -1,0 +1,26 @@
+{
+  "name": "@dungeoneer-io/nodejs-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dungeoneer-io/nodejs-utils.git"
+  },
+  "author": "Chris Creighton (creighcl)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dungeoneer-io/nodejs-utils/issues"
+  },
+  "homepage": "https://github.com/dungeoneer-io/nodejs-utils#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "blizzard.js": "^4.3.0",
+    "cli-progress": "^3.11.2",
+    "mongodb": "^4.9.1",
+    "statman-stopwatch": "^2.13.0"
+  }
+}
