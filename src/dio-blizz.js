@@ -68,6 +68,8 @@ const getMythicData = (o) => wowClient.mythicKeystone(o)
   .then(pluckData);
 const getMythicAffix = (o) => wowClient.mythicKeystoneAffix(o)
   .then(pluckData);
+const getMythicLeaderboard = (o) => wowClient.mythicKeystoneLeaderboard(o)
+  .then(pluckData);
 
 module.exports = {
   connectToBlizzard,
@@ -83,5 +85,6 @@ module.exports = {
   getWowPlayableRace,
   getWowPlayableSpec,
   getMythicData,
-  getMythicAffix
+  getMythicAffix,
+  getMythicLeaderboard
 };

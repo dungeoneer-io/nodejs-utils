@@ -1,6 +1,6 @@
 {
   "name": "@dungeoneer-io/nodejs-utils",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
